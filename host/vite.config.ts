@@ -2,6 +2,8 @@ import federation from "@originjs/vite-plugin-federation";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
+const isProd = import.meta.env?.NODE_ENV === "production";
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -10,9 +12,17 @@ export default defineConfig({
       name: "host",
       remotes: {
         orderApp:
-          "https://microfrontend-order-app.vercel.app/assets/orderApp.js",
+          `${
+            isProd
+              ? "https://microfrontend-order-app.vercel.app"
+              : "https://localhost:5001"
+          }` + "/assets/orderApp.js",
         productApp:
-          "https://microfrontend-product-app.vercel.app/assets/productApp.js",
+          `${
+            isProd
+              ? "https://microfrontend-product-app.vercel.app"
+              : "https://localhost:5002"
+          }` + "/assets/productApp.js",
       },
       shared: ["react", "react-dom", "react-router-dom"],
     }),
