@@ -1,0 +1,17 @@
+{
+  "name": "react-vite",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev:hosts": "pnpm --filter \"./shopping-app\" dev",
+    "build": "pnpm --parallel --filter \"./**\" build",
+    "build:remotes": "pnpm --parallel --filter \"./order-container\" build",
+    "serve": "pnpm --parallel --filter \"./**\" preview",
+    "serve:remotes": "pnpm --parallel --filter \"./order-container\" serve",
+    "stop": "kill-port --port 5000,5001"
+  },
+  "devDependencies": {
+    "kill-port": "^2.0.1",
+    "@originjs/vite-plugin-federation": "^1.2.3"
+  }
+}
