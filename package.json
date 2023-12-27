@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "dev:hosts": "pnpm --filter \"./shopping-app\" dev",
+    "dev:hosts": "pnpm --filter \"./host\" dev",
     "build": "pnpm --parallel --filter \"./**\" build",
     "build:remotes": "pnpm --parallel --filter \"./order-container\" build",
     "serve": "pnpm --parallel --filter \"./**\" preview",
