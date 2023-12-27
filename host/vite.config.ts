@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: "shopping-app",
+      name: "host",
       remotes: {
         productApp: "http://localhost:5002/assets/productApp.js",
         orderApp: "http://localhost:5001/assets/orderContainer.js",

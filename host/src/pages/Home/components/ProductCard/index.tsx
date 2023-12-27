@@ -31,7 +31,7 @@ const ProductCard: React.FC<IProductCardProps> = ({ product }) => {
           </p>
 
           <div className="ml-auto">
-            <button onClick={() => alert("adicionado")}>
+            <button>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"

@@ -1,9 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Breadcrumb from "../../components/Breadcrumb";
+import { Loader } from "../../components/Loader";
 import { IProduct } from "../../interfaces/Product";
-import ButtonAddToCart from "./components/ButtonAddToCart";
 
 const fetchProduct = async (id: string) => {
   return fetch(`https://fakestoreapi.com/products/${id}`)
@@ -24,7 +24,7 @@ const ProductDetails: React.FC = () => {
     enabled: !!productId,
   });
 
-  if (isLoading) return <p>Carregando</p>;
+  if (isLoading) return <Loader />;
 
   if (isError) return <div>Houve um erro, tente novamente!</div>;
 
@@ -92,7 +92,12 @@ const ProductDetails: React.FC = () => {
                   </select>
                 </div>
 
-                <ButtonAddToCart product={product} />
+                <Link
+                  to={`/orders/${product?.id}/checkout`}
+                  className="h-14 px-6 py-2 font-semibold rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white flex items-center justify-center"
+                >
+                  Comprar
+                </Link>
               </div>
             </div>
           </div>
