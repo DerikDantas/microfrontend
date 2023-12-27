@@ -4,6 +4,7 @@ import { Loader } from "../components/Loader";
 import Navbar from "../components/Navbar";
 
 const Home = lazy(() => import("../pages/Home"));
+const Order = lazy(() => import("orderApp/Order"));
 const Product = lazy(() => import("productApp/Product"));
 
 const AppRoutes = () => {
@@ -13,6 +14,7 @@ const AppRoutes = () => {
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/orders/*" element={<Order />} />
           <Route path="/product/*" element={<Product />} />
         </Routes>
       </Suspense>
