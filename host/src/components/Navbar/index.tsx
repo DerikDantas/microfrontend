@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
   return (
     <div className="bg-white shadow-sm sticky top-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1 md:py-4">
-        <div className="flex items-center justify-between md:justify-center">
+        <div className="flex items-center justify-between">
           {/* <!-- Menu Trigger --> */}
           <button
             className="md:hidden w-10 h-10 rounded-lg -ml-2 flex justify-center items-center"
