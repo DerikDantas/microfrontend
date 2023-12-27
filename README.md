@@ -1,9 +1,15 @@
 # Microfrontend Study Project
 
-This is a study project on Microfrontends, developed with the aim of exploring and understanding the concepts associated with this innovative architecture. Microfrontend is an architectural approach that enables breaking down a monolithic application into smaller, independent, and autonomous parts, providing benefits such as scalability, easier maintenance, and parallel development.
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/DerikDantas/microfrontend/blob/master/README.pt-br.md)
+
+<hr />
+
+This is a study project on Microfrontends, developed with the aim of exploring and understanding the concepts associated with this architecture. Microfrontend is an architectural approach that enables breaking down a monolithic application into smaller, independent, and autonomous parts, providing benefits such as scalability, easier maintenance, and parallel development.
 
 ## Overview
 The project consists of a web application divided into independent modules, each representing a specific functionality. Each module is a Microfrontend, developed and maintained separately, allowing the team to work in isolation on their respective areas without affecting other parts of the system.
+
+**[Live Demo](https://microfrontend-bice.vercel.app/)**
 
 ## 🚀 Technologies Used
 
@@ -16,9 +22,9 @@ The project consists of a web application divided into independent modules, each
 
 The project is intuitively structured, with the main directories being:
 
-- **`/host`:** The Microfrontend "host" is the main component developed in React with TypeScript. It contains the Home component (which includes the product list, Navbar, and AppRoutes).
-- **`/order-app`:** Child component developed in React with TypeScript. It houses the Checkout and Orders components.
-- **`/product-app`:** Another child component developed in React with TypeScript. It contains the ProductDetails component.
+- **`/host`:** The Microfrontend "host" is the main component developed in React. It contains the Home component (which includes the product list, Navbar, and AppRoutes).
+- **`/order-app`:** Child component developed in React. It houses the Checkout and Orders components.
+- **`/product-app`:** Another child component developed in React. It contains the ProductDetails component.
 
 ## 🔧 Getting Started
 
