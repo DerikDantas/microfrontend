@@ -9,8 +9,10 @@ export default defineConfig({
     federation({
       name: "host",
       remotes: {
-        productApp: "http://localhost:5002/assets/productApp.js",
-        orderApp: "http://localhost:5001/assets/orderApp.js",
+        orderApp:
+          "https://microfrontend-order-app.vercel.app/assets/orderApp.js",
+        productApp:
+          "https://microfrontend-product-app.vercel.app/assets/productApp.js",
       },
       shared: ["react", "react-dom", "react-router-dom"],
     }),
