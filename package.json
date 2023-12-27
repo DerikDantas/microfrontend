@@ -5,10 +5,10 @@
   "scripts": {
     "dev:hosts": "pnpm --filter \"./host\" dev",
     "build": "pnpm --parallel --filter \"./**\" build",
-    "build:remotes": "pnpm --parallel --filter \"./order-container\" build",
+    "build:remotes": "pnpm --parallel --filter \"./*-app\" build",
     "serve": "pnpm --parallel --filter \"./**\" preview",
-    "serve:remotes": "pnpm --parallel --filter \"./order-container\" serve",
-    "stop": "kill-port --port 5000,5001"
+    "serve:remotes": "pnpm --parallel --filter \"./*-app\" serve",
+    "stop": "kill-port --port 5000,5001,5002"
   },
   "devDependencies": {
     "kill-port": "^2.0.1",

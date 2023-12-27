@@ -1,1 +1,1 @@
-declare module "remoteApp/Order";
+declare module "productApp/Product";
