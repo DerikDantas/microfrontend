@@ -1,6 +1,6 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
 import federation from "@originjs/vite-plugin-federation";
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -8,11 +8,11 @@ export default defineConfig({
     react(),
     federation({
       name: "order",
-      filename: "orderContainer.js",
+      filename: "orderApp.js",
       exposes: {
         "./Order": "./src/App.tsx",
       },
-      shared: ["react", "react-dom"],
+      shared: ["react", "react-dom", "react-router-dom"],
     }),
   ],
   build: {

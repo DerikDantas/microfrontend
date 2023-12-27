@@ -10,7 +10,7 @@ export default defineConfig({
       name: "host",
       remotes: {
         productApp: "http://localhost:5002/assets/productApp.js",
-        orderApp: "http://localhost:5001/assets/orderContainer.js",
+        orderApp: "http://localhost:5001/assets/orderApp.js",
       },
       shared: ["react", "react-dom", "react-router-dom"],
     }),

@@ -1,4 +1,4 @@
 packages:
   - "host"
   - "product-app"
-  - "order-container"
+  - "order-app"
