@@ -31,15 +31,7 @@ const ProductDetails: React.FC = () => {
   return (
     <div className="antialiased">
       <div className="py-6">
-        <Breadcrumb
-          options={[
-            { name: "Home", link: "/" },
-            {
-              name: product?.title ?? "",
-              link: "/" + product?.id.toString(),
-            },
-          ]}
-        />
+        <Breadcrumb options={[{ name: "Home", link: "/" }]} />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
           <div className="flex flex-col md:flex-row -mx-4">
