@@ -1,4 +1,3 @@
 packages:
-  - "host"
-  - "product-app"
-  - "order-app"
+  - "packages/*"
+  - "apps/*"
