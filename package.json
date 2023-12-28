@@ -3,11 +3,11 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "dev:hosts": "turbo pnpm --filter \"./apps/host\" dev",
-    "build": "turbo pnpm --parallel --filter \"./apps/**\" build",
-    "build:remotes": "turbo turbo pnpm --parallel --filter \"./apps/*-app\" build",
-    "serve": "turbo pnpm --parallel --filter \"./apps/**\" preview",
-    "serve:remotes": "turbo pnpm --parallel --filter \"./apps/*-app\" serve",
+    "dev:hosts": "pnpm --filter \"./apps/host\" dev",
+    "build": "pnpm --parallel --filter \"./apps/**\" build",
+    "build:remotes": "pnpm --parallel --filter \"./apps/*-app\" build",
+    "serve": "pnpm --parallel --filter \"./apps/**\" preview",
+    "serve:remotes": "pnpm --parallel --filter \"./apps/*-app\" serve",
     "stop": "kill-port --port 5000,5001,5002"
   },
   "devDependencies": {
