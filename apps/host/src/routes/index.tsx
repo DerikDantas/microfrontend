@@ -1,7 +1,7 @@
 import { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
-import { Loader } from "../components/Loader";
 import Navbar from "../components/Navbar";
+import { Loader } from "@repo/ui/src";
 
 const Home = lazy(() => import("../pages/Home"));
 const Order = lazy(() => import("orderApp/Order"));

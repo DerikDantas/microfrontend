@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-interface IBreadcrumbProps {
+export interface IBreadcrumbProps {
   options: Array<{
     name: string;
     link: string;
   }>;
 }
 
-const Breadcrumb: React.FC<IBreadcrumbProps> = ({ options }) => {
+export const Breadcrumb: React.FC<IBreadcrumbProps> = ({ options }) => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex items-center space-x-2 text-gray-400 text-sm">
@@ -44,5 +44,3 @@ const Breadcrumb: React.FC<IBreadcrumbProps> = ({ options }) => {
     </div>
   );
 };
-
-export default Breadcrumb;

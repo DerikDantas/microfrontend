@@ -1,8 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import React from "react";
 import { Link, useParams } from "react-router-dom";
-import Breadcrumb from "../../components/Breadcrumb";
-import { Loader } from "../../components/Loader";
+import { Loader, Breadcrumb } from "@repo/ui/src";
 import { IProduct } from "../../interfaces/Product";
 
 const fetchProduct = async (id: string) => {

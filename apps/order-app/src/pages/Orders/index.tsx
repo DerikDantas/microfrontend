@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import React from "react";
-import { Loader } from "../../components/Loader";
+import { Loader } from "@repo/ui/src";
 import { IProduct } from "../../interfaces/Product";
 
 const fetchProducts = async () => {
