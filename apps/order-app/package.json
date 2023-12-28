@@ -28,6 +28,7 @@
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
     "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*"
+    "@repo/typescript-config": "workspace:*",
+    "@repo/tailwind-config": "workspace:*"
   }
 }
